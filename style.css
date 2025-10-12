@@ -1,0 +1,103 @@
+/* ==== Global Styles ==== */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ==== Header ==== */
+header {
+  text-align: center;
+  padding: 2.5rem 1rem;
+  background: #1e1e2f;
+  color: white;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* ==== Navigation Bar ==== */
+nav {
+  display: flex;
+  justify-content: center;
+  background: #2d2f33;
+  flex-wrap: wrap;
+  padding: 0.6rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 8px 12px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #4fc3f7;
+}
+
+/* ==== Sections ==== */
+section {
+  background: #fff;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+section h2 {
+  color: #1e1e2f;
+  border-bottom: 2px solid #4fc3f7;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* ==== Lists ==== */
+ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* ==== Images ==== */
+img {
+  display: block;
+  margin: 1rem 0;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* ==== Links ==== */
+a {
+  color: #007acc;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ==== Footer ==== */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1e1e2f;
+  color: #fff;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
