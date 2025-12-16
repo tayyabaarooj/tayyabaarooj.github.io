@@ -130,6 +130,19 @@ h1, h2, h3 {
 .education-item p {
   color: #374151;
 }
+.education-awards {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.education-awards img {
+  max-width: 280px;
+  height: auto;
+  border-radius: 10px;
+}
 
 /* ===== Footer ===== */
 footer {
