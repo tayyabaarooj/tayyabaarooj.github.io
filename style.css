@@ -13,10 +13,6 @@ body {
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
-}
-a {
   color: #2563eb;              /* blue link */
   text-decoration: underline; /* visible link cue */
   font-weight: 500;
