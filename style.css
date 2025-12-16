@@ -131,29 +131,33 @@ h1, h2, h3 {
   color: #374151;
 }
 
+
+/* === Awards Images Fix === */
+
 .awards-section {
   background: #ffffff;
-  padding: 50px 0;
+  padding: 40px 0 60px;
 }
 
 .education-awards {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
-  max-width: 800px;
+  gap: 32px;
+  max-width: 820px;
   margin: 0 auto;
 }
 
 .education-awards img {
-  width: 190px;
-  height: 260px;           /* FIXED height */
-  object-fit: contain;    /* prevents ruin */
-  background: #fff;
+  width: 190px;        /* small & clean */
+  height: 260px;       /* consistent height */
+  object-fit: contain; /* prevents distortion */
+  background: #ffffff;
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
 }
+
 
 
 /* ===== Footer ===== */
