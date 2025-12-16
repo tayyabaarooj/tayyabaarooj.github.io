@@ -136,13 +136,7 @@ h1, h2, h3 {
   padding-bottom: 0;
 }
 
-
-.awards-section {
-  background: #ffffff;
-  padding: 50px 0 60px;
-  margin-top: 0;
-}
-
+/* ===== FORCE FIX FOR EDUCATION AWARDS IMAGES ===== */
 
 .education-awards {
   display: flex;
@@ -154,15 +148,16 @@ h1, h2, h3 {
 }
 
 .education-awards img {
-  width: 170px !important;   
-  height: 240px !important;    
-  max-width: none !important;  
+  width: 170px !important;     /* FORCE small size */
+  height: 240px !important;    /* FORCE uniform height */
+  max-width: none !important;  /* KILLS global img rules */
   object-fit: contain !important;
   background: #ffffff;
   padding: 8px;
   border-radius: 10px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 }
+
 
 
 
