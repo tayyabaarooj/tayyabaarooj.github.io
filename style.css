@@ -175,6 +175,17 @@ h1, h2, h3 {
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.14);
 }
 
+.section a,
+.research-item a {
+  color: #2563eb !important;
+  text-decoration: underline !important;
+  font-weight: 500;
+}
+
+.section a:hover,
+.research-item a:hover {
+  color: #1d4ed8 !important;
+}
 
 
 /* ===== Footer ===== */
