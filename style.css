@@ -131,18 +131,21 @@ h1, h2, h3 {
   color: #374151;
 }
 .education-awards {
-  margin-top: 25px;
+  margin: 40px auto;
   display: flex;
   justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+  max-width: 700px;   /* keeps them centered */
 }
 
 .education-awards img {
-  max-width: 280px;
+  width: 180px;       /* SMALL & consistent */
   height: auto;
-  border-radius: 10px;
+  object-fit: contain;
+  border-radius: 8px;
 }
+
 
 /* ===== Footer ===== */
 footer {
