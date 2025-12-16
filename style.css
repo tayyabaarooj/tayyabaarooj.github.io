@@ -159,8 +159,8 @@ h1, h2, h3 {
   flex-wrap: nowrap;
 }
 .education-awards img {
-  width: 430px;   /* BIGGER WIDTH */
-  height: 300px;  /* BIGGER HEIGHT */
+  width: 480px;   /* BIGGER WIDTH */
+  height: 350px;  /* BIGGER HEIGHT */
   object-fit: contain;
   background: #ffffff;
   padding: 14px;
