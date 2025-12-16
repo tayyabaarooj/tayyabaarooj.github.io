@@ -136,6 +136,8 @@ h1, h2, h3 {
   padding-top: 2rem;
 }
 
+
+
 /* Image row */
 .education-awards {
   display: flex;
@@ -147,16 +149,16 @@ h1, h2, h3 {
   flex-wrap: nowrap; /* single row */
 }
 
-/* Images */
-.education-awards img {
-  height: 240px;
-  width: auto;
-  object-fit: contain;
-  background: #ffffff;
-  padding: 10px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+.education-awards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: nowrap;
 }
+
 
 
 
