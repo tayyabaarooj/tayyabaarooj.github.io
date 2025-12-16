@@ -130,32 +130,32 @@ h1, h2, h3 {
 .education-item p {
   color: #374151;
 }
-
-
-.section.alt {
-  padding-bottom: 0;
+/* ===== Awards / Certificates Section ===== */
+.awards-section {
+  background: #ffffff; /* FORCE white */
+  padding-top: 2rem;
 }
 
-/* ===== FORCE FIX FOR EDUCATION AWARDS IMAGES ===== */
-
+/* Image row */
 .education-awards {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 24px;
-  max-width: 700px;
-  margin: 30px auto 0;
+  gap: 32px;
+  max-width: 900px;
+  margin: 0 auto;
+  flex-wrap: nowrap; /* single row */
 }
 
+/* Images */
 .education-awards img {
-  width: 170px !important;     /* FORCE small size */
-  height: 240px !important;    /* FORCE uniform height */
-  max-width: none !important;  /* KILLS global img rules */
-  object-fit: contain !important;
+  height: 240px;
+  width: auto;
+  object-fit: contain;
   background: #ffffff;
-  padding: 8px;
-  border-radius: 10px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 
