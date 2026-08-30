@@ -222,3 +222,36 @@ footer {
     padding: 2.5rem 1.2rem;
   }
 }
+/* ===== Skills & Tools ===== */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.skill-category {
+  padding: 1.4rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.skill-category h3 {
+  font-size: 1.05rem;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.skill-category p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.8;
+}
+
+@media (max-width: 700px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
