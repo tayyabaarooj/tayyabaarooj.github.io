@@ -200,28 +200,6 @@ h1, h2, h3 {
   text-decoration-thickness: 2px;
 }
 
-
-
-
-/* ===== Footer ===== */
-footer {
-  text-align: center;
-  padding: 1.5rem;
-  font-size: 0.9rem;
-  color: #6b7280;
-  border-top: 1px solid #e5e7eb;
-}
-
-/* ===== Responsive ===== */
-@media (max-width: 600px) {
-  .hero h1 {
-    font-size: 1.9rem;
-  }
-
-  .section {
-    padding: 2.5rem 1.2rem;
-  }
-}
 /* ===== Skills & Tools ===== */
 
 .skills-grid {
@@ -255,3 +233,25 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  color: #6b7280;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 1.9rem;
+  }
+
+  .section {
+    padding: 2.5rem 1.2rem;
+  }
+}
+
