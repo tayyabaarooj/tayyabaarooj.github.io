@@ -75,10 +75,11 @@ h1, h2, h3 {
 }
 
 /* ===== Sections ===== */
-.section {
-  max-width: 850px;
-  margin: 0 auto;
-  padding: 3rem 1.5rem;
+
+.section { 
+  max-width: 850px; 
+  margin: 0 auto; 
+  padding: 2rem 1.5rem;
 }
 
 .section.alt {
