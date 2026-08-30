@@ -76,22 +76,24 @@ h1, h2, h3 {
 
 /* ===== Sections ===== */
 
+
 .section { 
   max-width: 850px; 
   margin: 0 auto; 
-  padding: 2rem 1.5rem;
+  padding: 2.2rem 1.5rem;
+}
+
+.section h2 { 
+  font-size: 1.6rem; 
+  margin-bottom: 1.2rem; 
+  border-bottom: 2px solid #e5e7eb; 
+  padding-bottom: 0.4rem; 
 }
 
 .section.alt {
   background: #f9fafb;
 }
 
-.section h2 {
-  font-size: 1.6rem;
-  margin-bottom: 1.2rem;
-  border-bottom: 2px solid #e5e7eb;
-  padding-bottom: 0.4rem;
-}
 
 .section p {
   font-size: 1rem;
@@ -246,13 +248,15 @@ footer {
 }
 
 /* ===== Responsive ===== */
-@media (max-width: 600px) {
-  .hero h1 {
-    font-size: 1.9rem;
+
+  @media (max-width: 600px) {
+  .hero h1 { 
+    font-size: 1.9rem; 
   }
 
-  .section {
-    padding: 2.5rem 1.2rem;
+  .section { 
+    padding: 1.8rem 1.2rem; 
   }
+}
 }
 
