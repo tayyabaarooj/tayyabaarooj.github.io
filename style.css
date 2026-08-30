@@ -1,8 +1,6 @@
 /* =========================================
-   TAYYABA AROOJ — MINIMAL PERSONAL WEBSITE
+   TAYYABA AROOJ — MINIMAL + CREATIVE TECH
    ========================================= */
-
-/* ===== Reset ===== */
 
 * {
   margin: 0;
@@ -17,13 +15,22 @@ html {
 body {
   font-family: 'Inter', sans-serif;
   background: #ffffff;
-  color: #182033;
+  color: #1f2937;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
 }
 
+a {
+  color: #2563eb;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
 
-/* ===== Global Typography ===== */
+a:hover {
+  color: #1d4ed8;
+}
 
 h1,
 h2,
@@ -33,151 +40,193 @@ h3 {
   letter-spacing: -0.02em;
 }
 
-p {
-  font-weight: 400;
-}
-
-a {
-  color: #2563eb;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  font-weight: 500;
-  transition: color 0.2s ease;
-}
-
-a:hover {
-  color: #1d4ed8;
-}
-
 
 /* =========================================
    HERO
    ========================================= */
 
 .hero {
-  min-height: 340px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  overflow: hidden;
 
   text-align: center;
-
-  padding: 5rem 1.5rem 4.5rem;
+  padding: 5.5rem 1.5rem 4.8rem;
 
   background:
     radial-gradient(
-      circle at 50% 15%,
-      rgba(37, 99, 235, 0.06),
-      transparent 38%
+      circle at 18% 20%,
+      rgba(37, 99, 235, 0.10),
+      transparent 20%
     ),
-    #fafafa;
+    radial-gradient(
+      circle at 82% 26%,
+      rgba(59, 130, 246, 0.08),
+      transparent 22%
+    ),
+    linear-gradient(
+      180deg,
+      #fbfdff 0%,
+      #ffffff 100%
+    );
 
-  border-bottom: 1px solid #eceff3;
+  border-bottom: 1px solid #eef1f5;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 190px;
+  height: 190px;
+
+  top: 32px;
+  right: 8%;
+
+  opacity: 0.3;
+
+  background-image:
+    radial-gradient(#2563eb 1px, transparent 1px);
+
+  background-size: 12px 12px;
+
+  pointer-events: none;
 }
 
 .hero h1 {
-  font-size: clamp(2.4rem, 5vw, 3.6rem);
-  line-height: 1.1;
-  margin-bottom: 0.65rem;
+  position: relative;
+  z-index: 1;
+
+  font-size: clamp(2.6rem, 6vw, 4.2rem);
+  line-height: 1.05;
+
+  margin-bottom: 0.7rem;
 }
 
 .tagline {
+  position: relative;
+  z-index: 1;
+
   font-size: 1rem;
-  color: #687386;
-  margin-bottom: 1.5rem;
-  letter-spacing: 0.01em;
+  color: #5f6b7c;
+
+  margin-bottom: 1.65rem;
+
+  letter-spacing: 0.02em;
 }
 
 
-/* ===== Hero Links ===== */
+/* =========================================
+   HERO LINKS
+   ========================================= */
 
 .links {
+  position: relative;
+  z-index: 1;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.8rem;
+
+  gap: 0.75rem;
   flex-wrap: wrap;
 }
 
 .links a {
-  width: 39px;
-  height: 39px;
+  width: 42px;
+  height: 42px;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  font-size: 1rem;
+  color: #475569;
 
-  color: #4b5563;
+  font-size: 1rem;
   text-decoration: none;
 
-  border: 1px solid #e3e7ed;
+  border: 1px solid #e4e9f0;
   border-radius: 50%;
 
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.9);
+
+  box-shadow:
+    0 6px 18px rgba(15, 23, 42, 0.05);
 
   transition:
     transform 0.2s ease,
-    border-color 0.2s ease,
     color 0.2s ease,
+    border-color 0.2s ease,
     box-shadow 0.2s ease;
 }
 
 .links a:hover {
   color: #2563eb;
-  border-color: #cbd8fb;
-  transform: translateY(-2px);
+
+  transform: translateY(-3px);
+
+  border-color: #cfdcff;
 
   box-shadow:
-    0 6px 18px rgba(15, 23, 42, 0.07);
+    0 10px 26px rgba(37, 99, 235, 0.10);
 }
 
 
 /* =========================================
-   GENERAL SECTIONS
+   SECTION BASE
    ========================================= */
 
 .section {
-  width: min(900px, calc(100% - 48px));
+  width: min(920px, calc(100% - 48px));
   margin: 0 auto;
 
-  padding: 3.3rem 0;
+  padding: 3.6rem 0;
 }
 
 .section.alt {
   position: relative;
-  background: #fafafa;
+
+  background: #fafbfc;
 
   box-shadow:
-    0 0 0 100vmax #fafafa;
+    0 0 0 100vmax #fafbfc;
 
   clip-path:
     inset(0 -100vmax);
 }
 
-
-/* ===== Section Titles ===== */
-
 .section h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+
   font-size: 1.65rem;
   line-height: 1.2;
 
   margin-bottom: 2rem;
   padding-bottom: 0.8rem;
 
-  border-bottom: 1px solid #dde2e8;
+  border-bottom: 1px solid #e3e7ec;
 }
 
+.section h2::before {
+  content: "";
 
-/* ===== Base Paragraph ===== */
+  display: block;
 
-.section > p {
-  max-width: 800px;
+  width: 4px;
+  height: 22px;
 
+  border-radius: 999px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #2563eb,
+      #60a5fa
+    );
+}
+
+.section p {
   font-size: 1rem;
-  line-height: 1.8;
   color: #4b5563;
 }
 
@@ -186,23 +235,21 @@ a:hover {
    ABOUT
    ========================================= */
 
-/* First content section = About */
-
 .hero + .section {
-  padding-top: 3.4rem;
+  padding-top: 3.5rem;
   padding-bottom: 2.4rem;
 }
 
 .hero + .section p {
   max-width: 790px;
+
+  line-height: 1.85;
+
   color: #3f4958;
 }
 
-
-/* Reduce About -> Projects gap */
-
 .hero + .section + .section {
-  padding-top: 2.4rem;
+  padding-top: 2.6rem;
 }
 
 
@@ -211,28 +258,65 @@ a:hover {
    ========================================= */
 
 .research-item {
-  padding: 0 0 2.2rem;
-  margin-bottom: 2.2rem;
+  position: relative;
 
-  border-bottom: 1px solid #eceff3;
+  padding:
+    1.2rem
+    1.2rem
+    1.3rem
+    4.4rem;
+
+  margin-bottom: 1.2rem;
+
+  border-radius: 14px;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
 }
 
-.research-item:last-of-type {
-  border-bottom: none;
-  margin-bottom: 0;
+.research-item::before {
+  content: "✦";
+
+  position: absolute;
+
+  left: 1.1rem;
+  top: 1.2rem;
+
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #2563eb;
+
+  font-size: 0.9rem;
+
+  background: #f8fbff;
+
+  border: 1px solid #e4ecfb;
+  border-radius: 10px;
+
+  box-shadow:
+    0 6px 16px rgba(15, 23, 42, 0.05);
+}
+
+.research-item:hover {
+  background: #fbfcff;
+  transform: translateY(-1px);
 }
 
 .research-item h3 {
   font-size: 1.18rem;
   line-height: 1.35;
 
-  margin-bottom: 0.65rem;
+  margin-bottom: 0.55rem;
 }
 
 .research-item p {
-  max-width: 820px;
-
-  font-size: 0.98rem;
+  font-size: 0.97rem;
   line-height: 1.75;
 
   color: #4b5563;
@@ -240,12 +324,9 @@ a:hover {
 
 .research-item a {
   color: #2563eb;
-
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
-
-  font-weight: 500;
 }
 
 .research-item a:hover {
@@ -256,23 +337,30 @@ a:hover {
 
 /* =========================================
    MELANODETECT FEATURE IMAGE
-
-   IMPORTANT:
-   Your file is ONE horizontal image containing
-   both the phone + hardware photograph.
-   We preserve the whole image.
    ========================================= */
 
 .project-image {
   width: 100%;
 
   margin:
-    -0.6rem
+    0.3rem
     0
-    3rem;
+    2.4rem;
 
-  display: flex;
-  justify-content: center;
+  padding: 12px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(37, 99, 235, 0.05),
+      rgba(255, 255, 255, 0.96)
+    );
+
+  border: 1px solid #dfe8fb;
+  border-radius: 18px;
+
+  box-shadow:
+    0 16px 38px rgba(37, 99, 235, 0.08);
 }
 
 .project-image img {
@@ -281,19 +369,11 @@ a:hover {
   width: 100%;
   height: auto;
 
-  max-width: 900px;
-
   object-fit: contain;
 
+  border-radius: 12px;
+
   background: #ffffff;
-
-  border: 1px solid #edf0f4;
-  border-radius: 14px;
-
-  padding: 10px;
-
-  box-shadow:
-    0 12px 35px rgba(15, 23, 42, 0.07);
 }
 
 
@@ -303,6 +383,10 @@ a:hover {
 
 .education-item {
   max-width: 760px;
+
+  padding-left: 1rem;
+
+  border-left: 3px solid #dbe7ff;
 }
 
 .education-item h3 {
@@ -317,24 +401,24 @@ a:hover {
 
 
 /* =========================================
-   AWARDS / CERTIFICATES
+   AWARDS
    ========================================= */
 
 .awards-section {
   background: #ffffff;
 
-  padding-top: 2.5rem;
-  padding-bottom: 3.5rem;
+  padding-top: 2.6rem;
+  padding-bottom: 3.6rem;
 }
 
 .education-awards {
   display: grid;
 
   grid-template-columns:
-    minmax(0, 1.5fr)
-    minmax(0, 1fr);
+    minmax(0, 1.45fr)
+    minmax(0, 0.95fr);
 
-  gap: 1.5rem;
+  gap: 1.4rem;
 
   width: 100%;
   margin: 0 auto;
@@ -354,11 +438,22 @@ a:hover {
 
   background: #ffffff;
 
-  border: 1px solid #eceff3;
-  border-radius: 14px;
+  border: 1px solid #e6ebf2;
+  border-radius: 16px;
 
   box-shadow:
-    0 10px 28px rgba(15, 23, 42, 0.07);
+    0 12px 30px rgba(15, 23, 42, 0.08);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.education-awards img:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 16px 36px rgba(15, 23, 42, 0.11);
 }
 
 
@@ -374,37 +469,70 @@ a:hover {
 
   gap: 1rem;
 
-  margin-top: 0.5rem;
+  margin-top: 0.6rem;
 }
 
 .skill-category {
+  position: relative;
+  overflow: hidden;
+
   min-height: 145px;
 
-  padding: 1.35rem 1.4rem;
+  padding: 1.4rem;
 
-  background: #ffffff;
+  border: 1px solid #e5eaf0;
+  border-radius: 14px;
 
-  border: 1px solid #e7ebf0;
-  border-radius: 12px;
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff 0%,
+      #fbfdff 100%
+    );
+
+  box-shadow:
+    0 6px 18px rgba(15, 23, 42, 0.04);
 
   transition:
     transform 0.2s ease,
-    box-shadow 0.2s ease,
-    border-color 0.2s ease;
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.skill-category::after {
+  content: "";
+
+  position: absolute;
+
+  width: 90px;
+  height: 90px;
+
+  right: -35px;
+  top: -35px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(37, 99, 235, 0.035);
+
+  pointer-events: none;
 }
 
 .skill-category:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
 
-  border-color: #d8dee7;
+  border-color: #d4def1;
 
   box-shadow:
-    0 10px 25px rgba(15, 23, 42, 0.05);
+    0 12px 28px rgba(15, 23, 42, 0.07);
 }
 
 .skill-category h3 {
   font-size: 1rem;
+
   margin-bottom: 0.55rem;
+
+  color: #111827;
 }
 
 .skill-category p {
@@ -422,12 +550,20 @@ a:hover {
 footer {
   text-align: center;
 
-  padding: 2rem 1.5rem;
+  padding: 2.2rem 1.5rem;
 
   font-size: 0.85rem;
-  color: #8a94a3;
 
-  border-top: 1px solid #eceff3;
+  color: #8792a2;
+
+  border-top: 1px solid #edf0f4;
+
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff,
+      #fafcff
+    );
 }
 
 
@@ -438,11 +574,13 @@ footer {
 @media (max-width: 800px) {
 
   .section {
-    width: min(100% - 36px, 900px);
+    width: min(100% - 36px, 920px);
   }
 
   .education-awards {
-    grid-template-columns: 1fr 0.78fr;
+    grid-template-columns:
+      1fr
+      0.8fr;
   }
 
   .education-awards img {
@@ -458,20 +596,25 @@ footer {
 @media (max-width: 650px) {
 
   .hero {
-    min-height: 290px;
-
     padding:
-      4rem
+      4.2rem
       1.25rem
-      3.5rem;
+      3.6rem;
+  }
+
+  .hero::after {
+    width: 130px;
+    height: 130px;
+
+    right: -15px;
   }
 
   .hero h1 {
-    font-size: 2.25rem;
+    font-size: 2.35rem;
   }
 
   .tagline {
-    font-size: 0.95rem;
+    font-size: 0.94rem;
   }
 
 
@@ -479,56 +622,68 @@ footer {
     width: calc(100% - 32px);
 
     padding:
-      2.6rem
+      2.7rem
       0;
   }
 
   .hero + .section {
-    padding-top: 2.7rem;
-    padding-bottom: 1.8rem;
+    padding-top: 2.8rem;
+    padding-bottom: 1.9rem;
   }
 
   .hero + .section + .section {
-    padding-top: 1.8rem;
+    padding-top: 1.9rem;
   }
 
 
   .section h2 {
     font-size: 1.45rem;
+
     margin-bottom: 1.5rem;
   }
 
 
-  .section > p,
-  .research-item p {
-    font-size: 0.95rem;
-    line-height: 1.75;
+  .research-item {
+    padding:
+      1rem
+      0
+      1.4rem
+      3.5rem;
+
+    margin-bottom: 0.8rem;
   }
 
+  .research-item::before {
+    left: 0;
+    top: 1rem;
 
-  .research-item {
-    margin-bottom: 1.8rem;
-    padding-bottom: 1.8rem;
+    width: 34px;
+    height: 34px;
   }
 
 
   .project-image {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
+
+    padding: 7px;
+
+    border-radius: 13px;
   }
 
   .project-image img {
-    padding: 6px;
-    border-radius: 10px;
+    border-radius: 9px;
   }
 
 
   .education-awards {
     grid-template-columns: 1fr;
+
     gap: 1rem;
   }
 
   .education-awards img {
     height: auto;
+
     max-height: 420px;
   }
 
